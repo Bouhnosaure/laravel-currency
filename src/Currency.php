@@ -98,6 +98,9 @@ class Currency
             return null;
         }
 
+        // Round
+        $value = round($value);
+
         // Should the result be formatted?
         if ($format === true) {
             return $this->format($value, $to);
